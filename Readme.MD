@@ -4,6 +4,8 @@
 storefront/index.html   the shop (works in demo mode with no setup)
 storefront/admin.html   admin dashboard: products, images, stock, orders
 storefront/config.js    your Supabase URL + anon key (the only file you edit)
+storefront/logo/        elanvoire-logo.svg (the official logo), plus wordmark, EV monogram, lockup and favicon variants,
+                        and social-preview.png (1280x640, upload it in GitHub: Settings > Social preview)
 supabase/migrations/    0001_init.sql, 0002_storefront.sql
 supabase/functions/     create-order (prices cart, sends M-Pesa prompt), payment-callback
 ```
