@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Elanvoire — thoughtfully curated fashion, beauty and lifestyle discoveries."><title>Elanvoire — Wear Your Distinction</title>
+<script>var FB={Fashion:'images/fashion.svg',Beauty:'images/beauty.svg',Accessories:'images/accessories.svg',Lifestyle:'images/lifestyle.svg'};
+function imgFail(i){var f=i.getAttribute('data-fallback')||'images/placeholder.svg';i.onerror=null;i.style.opacity='';i.style.display='';if(i.getAttribute('src')!==f){i.removeAttribute('srcset');i.src=f}}</script>
+<style>
+:root {
+ --site-primary: #3A2E25;
+ --site-on-primary: #F9F6EF;
+ --site-secondary: #D7C8B8;
+ --site-on-secondary: #30251F;
+ --site-background: #F9F6EF;
+ --site-on-background: #30251F;
+ --site-font-body: 'Montserrat', 'Avenir Next', Arial, sans-serif;
+ --site-font-heading: 'Playfair Display', Georgia, serif;
+ --site-heading-scale: 1;
+ --site-spacing-scale: 1;
+ --site-radius-scale: 1;
+ --site-decoration-opacity: 1;
+ --surface: #FFFFFF;
+ --surface-soft: #F1EBE2;
+ --ink: #30251F;
+ --muted: #74685F;
+ --line: #E3D9CC;
+ --gold: #B99A60;
+ color-scheme: light;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--site-background);color:var(--ink);font-family:var(--site-font-body);font-size:14px;line-height:1.55} button,input{font:inherit} button{cursor:pointer} a{color:inherit;text-decoration:none} img{display:block;max-width:100%;object-fit:cover} .app{min-height:100vh;background-color:var(--site-background);border-radius:0} .announcement{background:var(--site-primary);color:var(--site-on-primary);text-align:center;padding:9px 16px;font-size:10px;letter-spacing:.16em;text-transform:uppercase} .header{background:var(--site-background);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)} .head-main{max-width:1440px;margin:auto;padding:20px 5.5%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}.icon-btn{border:0;background:transparent;color:var(--ink);padding:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px}.icon-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.5}.wordmark{font-family:var(--site-font-heading);font-size:clamp(23px,2.4vw,32px);letter-spacing:.19em;font-weight:500;white-space:nowrap}.wordmark span{color:var(--gold)}.head-actions{display:flex;justify-content:flex-end;gap:10px;align-items:center}.search-wrap{position:relative;display:flex;align-items:center}.search-wrap input{width:0;opacity:0;padding:9px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);transition:all .25s;outline:none}.search-wrap.open input{width:180px;opacity:1;padding:9px}.cart-count{background:var(--gold);color:#211b15;border-radius:50%;font-size:10px;min-width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;margin-left:-5px}.nav{display:flex;justify-content:center;gap:clamp(20px,4vw,52px);padding:0 20px 17px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.nav a{padding:3px 0;position:relative}.nav a:after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:1px;background:var(--gold);transition:width .2s}.nav a:hover:after{width:100%}.hero{display:grid;grid-template-columns:1fr 1fr;min-height:520px;background:var(--surface-soft)}.hero-copy{padding:clamp(42px,7vw,100px) 9%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}.hero h1{font-family:var(--site-font-heading);font-size:clamp(42px,5.7vw,78px);font-weight:400;line-height:1.02;letter-spacing:-.035em;margin:20px 0}.hero h1 em{font-weight:400;color:#9C7D4C}.hero p{max-width:390px;color:var(--muted);line-height:1.9;margin:0 0 28px;font-size:13px}.btn{border:1px solid var(--site-primary);background:var(--site-primary);color:var(--site-on-primary);padding:14px 22px;letter-spacing:.14em;text-transform:uppercase;font-size:10px;transition:all .2s;display:inline-flex;align-items:center;justify-content:center;gap:10px}.btn:hover{background:transparent;color:var(--ink)}.btn.outline{background:transparent;color:var(--ink);border-color:var(--line)}.btn.outline:hover{border-color:var(--site-primary);background:var(--site-primary);color:var(--site-on-primary)}.hero-image{min-height:450px;position:relative;overflow:hidden}.hero-image img{width:100%;height:100%;position:absolute;inset:0;object-position:center 38%}.hero-image:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,23,17,.12),transparent 55%);pointer-events:none}.hero-caption{position:absolute;bottom:24px;right:24px;color:#fff;text-shadow:0 1px 12px #333;font-size:9px;letter-spacing:.2em;text-transform:uppercase;z-index:1}.benefits{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);background:var(--surface)}.benefit{padding:23px 12px;text-align:center;border-right:1px solid var(--line)}.benefit:last-child{border:0}.benefit strong{display:block;font-family:var(--site-font-heading);font-weight:400;font-size:17px}.benefit span{font-size:9px;letter-spacing:.11em;color:var(--muted);text-transform:uppercase}.section{padding:80px 5.5%;max-width:1500px;margin:auto}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}.section-head h2{font-family:var(--site-font-heading);font-weight:400;font-size:clamp(31px,3.5vw,46px);line-height:1.1;margin:10px 0 0}.section-head p{margin:0;color:var(--muted);font-size:12px;max-width:350px}.text-link{font-size:10px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:5px;white-space:nowrap}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category-card{position:relative;min-height:300px;overflow:hidden;background:var(--surface-soft);isolation:isolate}.category-card img{width:100%;height:100%;position:absolute;inset:0;z-index:-2;transition:transform .6s;object-position:center}.category-card:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,19,15,.7),rgba(23,19,15,0) 62%);z-index:-1}.category-card:hover img{transform:scale(1.045)}.category-info{position:absolute;bottom:20px;left:20px;color:#fff}.category-info h3{font-family:var(--site-font-heading);font-size:28px;font-weight:400;margin:0 0 5px}.category-info span{font-size:9px;letter-spacing:.16em;text-transform:uppercase}.shop-section{background:var(--surface);max-width:none;padding-left:max(5.5%,calc((100% - 1330px)/2));padding-right:max(5.5%,calc((100% - 1330px)/2))}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter{background:transparent;border:1px solid var(--line);color:var(--ink);padding:9px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.filter.active,.filter:hover{background:var(--site-primary);border-color:var(--site-primary);color:var(--site-on-primary)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 17px}.product-card{min-width:0}.product-image{aspect-ratio:4/5;position:relative;overflow:hidden;background:var(--surface-soft)}.product-image img{width:100%;height:100%;transition:transform .45s}.product-card:hover .product-image img{transform:scale(1.04)}.product-tag{position:absolute;left:10px;top:10px;background:var(--site-background);color:var(--ink);padding:6px 8px;font-size:8px;letter-spacing:.12em;text-transform:uppercase}.heart{position:absolute;right:10px;top:10px;width:33px;height:33px;border:0;border-radius:50%;background:var(--site-background);color:var(--ink);font-size:17px}.heart.saved{color:#a14e43}.quick-add{position:absolute;bottom:10px;left:10px;right:10px;padding:12px;border:0;background:var(--site-background);color:var(--ink);text-transform:uppercase;letter-spacing:.13em;font-size:9px;opacity:0;transform:translateY(5px);transition:.2s}.product-card:hover .quick-add,.quick-add:focus{opacity:1;transform:translateY(0)}.product-meta{padding:13px 2px}.brand-name{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}.product-name{font-family:var(--site-font-heading);font-size:17px;line-height:1.3;margin:5px 0}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-size:12px;font-weight:600}.product-category{font-size:9px;color:var(--muted)}.feature-banner{display:grid;grid-template-columns:1fr 1fr;min-height:380px;background:#e4d7c8}.feature-banner img{width:100%;height:100%;max-height:460px}.feature-copy{padding:clamp(32px,6vw,80px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;color:#342920}.feature-copy h2{font-family:var(--site-font-heading);font-size:clamp(34px,4vw,54px);font-weight:400;line-height:1.08;margin:16px 0}.feature-copy p{color:#65564a;max-width:400px;line-height:1.9;font-size:12px;margin:0 0 25px}.brand-strip{display:flex;align-items:center;justify-content:space-around;gap:25px;flex-wrap:wrap;padding:30px 5.5%;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted)}.brand-strip span{font-family:var(--site-font-heading);font-size:clamp(16px,2vw,23px);letter-spacing:.06em}.newsletter{padding:75px 20px;text-align:center;background:var(--surface-soft)}.newsletter h2{font-family:var(--site-font-heading);font-weight:400;font-size:clamp(30px,4vw,44px);margin:10px 0}.newsletter p{font-size:12px;color:var(--muted);margin:0 auto 25px;max-width:430px}.newsletter-form{display:flex;max-width:490px;margin:auto;gap:0}.newsletter-form input{flex:1;min-width:0;border:1px solid var(--line);border-right:0;padding:14px 15px;background:var(--site-background);color:var(--ink);outline:none}.newsletter-form .btn{white-space:nowrap}.footer{background:var(--site-primary);color:var(--site-on-primary);padding:55px 5.5% 25px}.footer-main{max-width:1400px;margin:auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:35px;padding-bottom:40px}.footer .wordmark{display:inline-block;font-size:26px}.footer .wordmark span{color:#d2b778}.footer p{font-size:11px;color:#d1c4b8;max-width:290px;line-height:1.9}.footer h4{font-size:9px;letter-spacing:.17em;text-transform:uppercase;font-weight:600;margin:5px 0 18px}.footer-links{display:grid;gap:11px;font-size:11px;color:#e0d7cf}.footer-links a:hover{color:#d2b778}.footer-bottom{border-top:1px solid #66574b;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#c9b9aa;font-size:9px;letter-spacing:.04em}.drawer-backdrop{position:fixed;inset:0;background:#17120e80;z-index:50;opacity:0;visibility:hidden;transition:.25s}.drawer-backdrop.open{opacity:1;visibility:visible}.cart-drawer{position:fixed;z-index:51;right:0;top:0;height:100dvh;width:min(440px,100%);background:var(--site-background);color:var(--ink);transform:translateX(102%);transition:transform .3s;display:flex;flex-direction:column;box-shadow:-10px 0 40px #0001}.cart-drawer.open{transform:translateX(0)}.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:22px;border-bottom:1px solid var(--line)}.drawer-head h3{font-family:var(--site-font-heading);font-size:26px;font-weight:400;margin:0}.cart-items{padding:18px 22px;overflow:auto;flex:1}.cart-row{display:grid;grid-template-columns:78px 1fr auto;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-row img{width:78px;height:96px;object-fit:cover}.cart-row h4{font-family:var(--site-font-heading);font-weight:400;font-size:16px;margin:3px 0}.cart-row p{font-size:11px;color:var(--muted);margin:0 0 9px}.qty{display:flex;align-items:center;gap:10px}.qty button{border:1px solid var(--line);background:transparent;color:var(--ink);width:24px;height:24px}.remove{background:none;border:0;color:var(--muted);font-size:10px;text-decoration:underline;margin-top:7px}.cart-foot{border-top:1px solid var(--line);padding:20px 22px}.subtotal{display:flex;justify-content:space-between;font-weight:600;margin-bottom:7px}.cart-foot small{color:var(--muted);display:block;font-size:10px;margin-bottom:15px}.cart-foot .btn{width:100%}.empty-cart{text-align:center;padding:55px 15px;color:var(--muted)}.empty-cart h4{font-family:var(--site-font-heading);font-size:24px;color:var(--ink);font-weight:400}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--site-primary);color:var(--site-on-primary);padding:13px 20px;z-index:80;font-size:11px;box-shadow:0 8px 24px #0002;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-menu{display:none}.no-results{grid-column:1/-1;text-align:center;padding:40px;color:var(--muted)}
+@media(max-width:900px){.head-main{padding:17px 4%;grid-template-columns:1fr auto 1fr}.nav{gap:22px}.hero{min-height:420px}.hero-copy{padding:45px 8%}.categories{grid-template-columns:repeat(2,1fr)}.category-card{min-height:270px}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-main{grid-template-columns:1.5fr 1fr 1fr}.footer-main>div:last-child{grid-column:2/4}.feature-banner{min-height:330px}}
+@media(max-width:600px){.announcement{font-size:8px;letter-spacing:.1em}.head-main{padding:14px 4%;gap:6px}.wordmark{font-size:20px;letter-spacing:.12em}.head-actions{gap:2px}.head-actions .account-btn{display:none}.nav{display:none;flex-direction:column;align-items:stretch;padding:10px 6% 18px;gap:0}.nav.open{display:flex}.nav a{padding:12px 0;border-top:1px solid var(--line)}.mobile-menu{display:inline-flex}.search-wrap.open{position:absolute;right:15px;top:66px;background:var(--site-background);padding:5px 10px;box-shadow:0 5px 15px #0001}.search-wrap.open input{width:145px}.hero{grid-template-columns:1fr}.hero-copy{padding:48px 7% 38px;order:2}.hero-image{min-height:340px;order:1}.hero h1{font-size:49px}.hero p{font-size:12px}.benefits{grid-template-columns:repeat(2,1fr)}.benefit{padding:15px 8px;border-bottom:1px solid var(--line)}.benefit:nth-child(2){border-right:0}.benefit:nth-child(3),.benefit:nth-child(4){border-bottom:0}.benefit strong{font-size:15px}.section{padding:54px 5%}.section-head{align-items:flex-start;flex-direction:column;gap:13px}.section-head p{max-width:100%}.categories{gap:10px}.category-card{min-height:220px}.category-info{left:13px;bottom:15px}.category-info h3{font-size:23px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 11px}.product-name{font-size:16px}.quick-add{opacity:1;transform:none;padding:10px 5px;font-size:8px}.product-tag{font-size:7px;left:6px;top:6px}.heart{width:29px;height:29px;right:6px;top:6px}.shop-section{padding-left:5%;padding-right:5%}.feature-banner{grid-template-columns:1fr}.feature-banner img{height:300px}.feature-copy{padding:36px 7% 42px}.brand-strip{gap:20px;padding:25px 5%}.brand-strip span{font-size:16px}.newsletter{padding:55px 18px}.newsletter-form{flex-direction:column;gap:9px}.newsletter-form input{border-right:1px solid var(--line)}.newsletter-form .btn{width:100%}.footer{padding:42px 6% 22px}.footer-main{grid-template-columns:1fr 1fr;gap:30px 20px}.footer-main>div:first-child{grid-column:1/-1}.footer-main>div:last-child{grid-column:auto}.footer-bottom{font-size:8px}.search-wrap input{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+/* ---- fixes + checkout additions ---- */
+html{scroll-padding-top:120px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hero-image{background:linear-gradient(135deg,#e4d7c8,#d7c8b8)}
+.cart-drawer{visibility:hidden;transition:transform .3s,visibility 0s .3s}
+.cart-drawer.open{visibility:visible;transition:transform .3s,visibility 0s}
+.product-card:focus-within .quick-add{opacity:1;transform:none}
+@media(hover:none){.quick-add{opacity:1;transform:none}}
+.quick-add:disabled{cursor:not-allowed;color:var(--muted)}
+.ph{background:var(--surface-soft);width:78px;height:96px}
+.modal-wrap{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;background:#17120e99;padding:16px}
+.modal-wrap.open{display:flex}
+.modal{position:relative;background:var(--site-background);color:var(--ink);width:min(540px,100%);max-height:92dvh;overflow:auto;padding:30px 28px}
+.modal h3{font-family:var(--site-font-heading);font-weight:400;font-size:28px;margin:0 0 6px}
+.modal-x{position:absolute;right:10px;top:10px}
+.co-sub{color:var(--muted);font-size:12px;margin:0 0 18px}
+.modal label{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.modal input{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:16px;letter-spacing:0;text-transform:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.co-totals{border-top:1px solid var(--line);padding-top:12px;margin:6px 0 14px;font-size:12px}
+.co-totals div{display:flex;justify-content:space-between;padding:3px 0}
+.co-totals .total{font-weight:600;font-size:14px}
+.co-err{color:#a14e43;font-size:12px;min-height:18px;margin:0 0 10px}
+.modal .btn{width:100%}
+.co-state{text-align:center;padding:26px 6px}
+.co-state p{font-size:13px;line-height:1.7}
+.spinner{width:34px;height:34px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;margin:0 auto 18px;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:600px){html{scroll-padding-top:80px}.row2{grid-template-columns:1fr}.modal{padding:26px 20px}}
+</style></head>
+<body><div class="app" id="app">
+<div class="announcement">A considered edit of fashion, beauty & everyday luxury · Welcome to Elanvoire</div>
+<header class="header"><div class="head-main"><div><button class="icon-btn mobile-menu" id="menuToggle" aria-label="Toggle menu"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div><a href="#home" class="wordmark" aria-label="Elanvoire home">ELAN<span>V</span>OIRE</a><div class="head-actions"><div class="search-wrap" id="searchWrap"><input id="searchInput" type="search" placeholder="Search the edit…" aria-label="Search products"><button class="icon-btn" id="searchToggle" aria-label="Open search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button></div><button class="icon-btn account-btn" id="accountBtn" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21c.6-4.1 3.2-6.3 7.5-6.3s6.9 2.2 7.5 6.3"/></svg></button><button class="icon-btn" id="cartOpen" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" id="cartCount">0</span></button></div></div><nav class="nav" id="nav"><a href="#shop" data-category="All">New arrivals</a><a href="#shop" data-category="Fashion">Fashion</a><a href="#shop" data-category="Beauty">Beauty</a><a href="#shop" data-category="Accessories">Accessories</a><a href="#shop" data-category="Lifestyle">Lifestyle</a><a href="#featured">The edit</a></nav></header>
+<main><section class="hero" id="home"><div class="hero-copy"><span class="eyebrow">The art of everyday elegance</span><h1>Find your<br><em>distinctive</em> style.</h1><p>Thoughtfully curated fashion, beauty and lifestyle discoveries for the way you want to feel — confident, considered, entirely yourself.</p><a href="#shop" class="btn">Discover the edit <span aria-hidden="true">↗</span></a></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85" onerror="imgFail(this)" data-fallback="images/hero.svg" alt="Editorial fashion portrait in timeless neutral styling"><span class="hero-caption">Style, with intention</span></div></section>
+<section class="benefits" aria-label="Our promise"><div class="benefit"><strong>Thoughtfully chosen</strong><span>Quality over quantity</span></div><div class="benefit"><strong>Everyday luxury</strong><span>Considered price points</span></div><div class="benefit"><strong>Easy, assured shopping</strong><span>Clear customer care</span></div><div class="benefit"><strong>Made for you</strong><span>Style without limits</span></div></section>
+<section class="section" id="categories"><div class="section-head"><div><span class="eyebrow">Explore your expression</span><h2>A world of considered style.</h2></div><p>From the pieces you reach for every day to the little luxuries that make a moment.</p></div><div class="categories"><a href="#shop" class="category-card" data-shop-category="Fashion"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion collection" onerror="imgFail(this)" data-fallback="images/fashion.svg"><div class="category-info"><h3>Fashion</h3><span>Find your signature ↗</span></div></a><a href="#shop" class="category-card" data-shop-category="Beauty"><img loading="lazy" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80" alt="Beauty products" onerror="imgFail(this)" data-fallback="images/beauty.svg"><div class="category-info"><h3>Beauty</h3><span>Your daily ritual ↗</span></div></a><a href="#shop" class="category-card" data-shop-category="Accessories"><img loading="lazy" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80" alt="Jewellery and accessories" onerror="imgFail(this)" data-fallback="images/accessories.svg"><div class="category-info"><h3>Accessories</h3><span>The finishing touch ↗</span></div></a><a href="#shop" class="category-card" data-shop-category="Lifestyle"><img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Warm, elegant lifestyle interior" onerror="imgFail(this)" data-fallback="images/lifestyle.svg"><div class="category-info"><h3>Lifestyle</h3><span>Live beautifully ↗</span></div></a></div></section>
+<section class="section shop-section" id="shop"><div class="section-head"><div><span class="eyebrow">The Elanvoire edit</span><h2>Pieces to fall for.</h2></div><a href="#shop" class="text-link" id="viewAll">View all pieces ↗</a></div><div class="filters" id="filters"></div><div class="product-grid" id="productGrid"></div></section>
+<section class="feature-banner" id="featured"><img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Modern fashion editorial in neutral tones" onerror="imgFail(this)" data-fallback="images/feature.svg"><div class="feature-copy"><span class="eyebrow">A little more you</span><h2>Luxury isn't a label.<br>It's how it feels.</h2><p>We believe good style should feel personal, beautiful and within reach. Explore a thoughtful mix of brands and finds, selected to bring something special to the everyday.</p><a href="#shop" class="btn outline">Explore our point of view ↗</a></div></section>
+<div class="brand-strip" aria-label="Our curation values"><span>Timeless design</span><span>✳</span><span>Everyday discovery</span><span>✳</span><span>Personal expression</span><span>✳</span><span>Better details</span></div>
+<section class="newsletter"><span class="eyebrow">A note from Elanvoire</span><h2>Good things, thoughtfully delivered.</h2><p>Be first to discover new arrivals, style inspiration and little luxuries worth knowing about.</p><form class="newsletter-form" id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required><button class="btn" type="submit">Join the list ↗</button></form></section></main>
+<footer class="footer"><div class="footer-main"><div><a href="#home" class="wordmark">ELAN<span>V</span>OIRE</a><p>Curated brands. Timeless style. Beautiful you. A considered destination for fashion, beauty and the art of everyday living.</p></div><div><h4>Explore</h4><div class="footer-links"><a href="#shop" data-category="All">New arrivals</a><a href="#shop" data-category="Fashion">Fashion</a><a href="#shop" data-category="Beauty">Beauty</a><a href="#shop" data-category="Accessories">Accessories</a><a href="#shop" data-category="Lifestyle">Lifestyle</a></div></div><div><h4>Help & support</h4><div class="footer-links"><a href="#footer" data-info="Delivery details will appear here once shipping partners and rates are configured.">Delivery information</a><a href="#footer" data-info="Returns policy should be added before launch, based on your fulfilment setup and local consumer requirements.">Returns & exchanges</a><a href="#footer" data-info="Customer support: replace this demo message with your real email, phone or WhatsApp support details.">Contact us</a><a href="#footer" data-info="Add your privacy policy and terms before collecting customer information or accepting orders.">FAQs & policies</a></div></div><div><h4>Follow the feeling</h4><div class="footer-links"><a href="#footer" data-info="Connect your official Instagram profile here before launch.">Instagram ↗</a><a href="#footer" data-info="Connect your official TikTok profile here before launch.">TikTok ↗</a><a href="#footer" data-info="Connect your official Pinterest profile here before launch.">Pinterest ↗</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Elanvoire. Wear Your Distinction.</span><span>Designed with intention · Nairobi, Kenya</span><span>Pay securely with M-Pesa</span></div></footer>
+</div>
+<div class="drawer-backdrop" id="backdrop"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-modal="true" role="dialog"><div class="drawer-head"><h3>Your shopping bag <span id="drawerCount" style="font-family:var(--site-font-body);font-size:12px;color:var(--muted)">(0)</span></h3><button class="icon-btn" id="cartClose" aria-label="Close shopping bag">✕</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot" id="cartFoot"><div class="subtotal"><span>Subtotal</span><span id="subtotal">KSh 0</span></div><small>Delivery is added at checkout. Pay securely with M-Pesa.</small><button class="btn" id="checkoutBtn">Continue to checkout ↗</button></div></aside><div class="modal-wrap" id="checkoutWrap"><div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="coTitle"><button class="icon-btn modal-x" id="coClose" aria-label="Close checkout">✕</button><div id="coBody"></div></div></div>
+<datalist id="counties"><option value="Baringo"><option value="Bomet"><option value="Bungoma"><option value="Busia"><option value="Elgeyo-Marakwet"><option value="Embu"><option value="Garissa"><option value="Homa Bay"><option value="Isiolo"><option value="Kajiado"><option value="Kakamega"><option value="Kericho"><option value="Kiambu"><option value="Kilifi"><option value="Kirinyaga"><option value="Kisii"><option value="Kisumu"><option value="Kitui"><option value="Kwale"><option value="Laikipia"><option value="Lamu"><option value="Machakos"><option value="Makueni"><option value="Mandera"><option value="Marsabit"><option value="Meru"><option value="Migori"><option value="Mombasa"><option value="Murang'a"><option value="Nairobi"><option value="Nakuru"><option value="Nandi"><option value="Narok"><option value="Nyamira"><option value="Nyandarua"><option value="Nyeri"><option value="Samburu"><option value="Siaya"><option value="Taita-Taveta"><option value="Tana River"><option value="Tharaka-Nithi"><option value="Trans Nzoia"><option value="Turkana"><option value="Uasin Gishu"><option value="Vihiga"><option value="Wajir"><option value="West Pokot"></datalist>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script>
+const CFG = window.ELANVOIRE || {};
+const LIVE = !!(CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY);
+const API = (CFG.SUPABASE_URL || '').replace(/\/$/, '');
+const H = { apikey: CFG.SUPABASE_ANON_KEY || '', Authorization: 'Bearer ' + (CFG.SUPABASE_ANON_KEY || ''), 'Content-Type': 'application/json' };
+// Display-only estimate. The server (create-order) is the source of truth, keep these two in sync.
+const DELIVERY = { nairobi: CFG.DELIVERY_NAIROBI ?? 300, other: CFG.DELIVERY_OTHER ?? 500 };
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const safeImg = u => /^https?:\/\//i.test(u || '') ? u : '';
+const money = n => 'KSh ' + Number(n).toLocaleString('en-KE');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const store = {
+  get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d } catch { return d } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch { } }
+};
+
+const DEMO = [
+  ['d1', 'ELANVOIRE EDIT', 'The Everyday Tailored Blazer', 'Fashion', 6500, 'The edit', 'photo-1591047139829-d91aecb6caea'],
+  ['d2', 'BEAUTY RITUAL', 'Glow Essentials Set', 'Beauty', 2800, 'Best-loved', 'photo-1608248543803-ba4f8c70ae0b'],
+  ['d3', 'MODERN HEIRLOOM', 'Sculptural Gold Earrings', 'Accessories', 1900, 'New', 'photo-1535632066927-ab7c9ab60908'],
+  ['d4', 'ELANVOIRE LIVING', 'The Sunday Scent Candle', 'Lifestyle', 2200, 'A little luxury', 'photo-1603006905003-be475563bc59'],
+  ['d5', 'FORM & FLOW', 'Soft Structure Shoulder Bag', 'Accessories', 4200, 'Customer favourite', 'photo-1584917865442-de89df76afd3'],
+  ['d6', 'BEAUTY RITUAL', 'Daily Hydration Serum', 'Beauty', 1750, 'Everyday essential', 'photo-1620916566398-39f1143ab7be'],
+  ['d7', 'ELANVOIRE EDIT', 'Relaxed Linen Co-ord', 'Fashion', 4800, 'New', 'photo-1515886657613-9f3515b0c78f'],
+  ['d8', 'ELANVOIRE LIVING', 'The Ritual Trinket Tray', 'Lifestyle', 1600, 'Thoughtful gift', 'photo-1610701596007-11502861dcfa']
+].map(([id, brand, name, category, price, tag, ph]) => ({ id, brand, name, category, price, tag, stock: 20, image: `https://images.unsplash.com/${ph}?auto=format&fit=crop&w=700&q=80` }));
+
+let products = [], byId = new Map(), catalogue = 'demo';
+let activeFilter = 'All', searchTerm = '', searchTimer, lastFocus = null, polling = false;
+let cart = store.get('ev.cart', {});
+if (!cart || typeof cart !== 'object' || Array.isArray(cart)) cart = {};
+const favorites = new Set(store.get('ev.fav', []));
+const saveCart = () => store.set('ev.cart', cart);
+
+const grid = $('productGrid'), drawer = $('cartDrawer'), wrap = $('checkoutWrap'), coBody = $('coBody');
+
+/* ---------- catalogue ---------- */
+const norm = r => ({ id: r.id, brand: r.brands?.name || '', name: r.name, category: r.categories?.name || 'Other', price: r.price_kes, stock: r.stock, tag: r.tag || '', image: safeImg(r.image_url) });
+
+function setProducts(list, mode) {
+  products = list; catalogue = mode; byId = new Map(list.map(p => [p.id, p]));
+  let changed = false;
+  for (const id of Object.keys(cart)) {
+    const p = byId.get(id);
+    if (!p || p.stock < 1) { delete cart[id]; changed = true } else if (cart[id] > p.stock) { cart[id] = p.stock; changed = true }
+  }
+  if (changed) { saveCart(); showToast('Some items in your bag changed availability.') }
+  renderFilters(); renderProducts(); renderCart();
+}
+
+async function loadProducts() {
+  if (!LIVE) return setProducts(DEMO, 'demo');
+  try {
+    const q = 'select=id,name,price_kes,stock,tag,image_url,brands(name),categories(name)&is_active=eq.true&order=created_at.desc,name.asc';
+    const r = await fetch(`${API}/rest/v1/products?${q}`, { headers: H });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    setProducts((await r.json()).map(norm), 'live');
+  } catch (e) {
+    console.error(e);
+    setProducts(DEMO, 'demo');
+    showToast('Showing sample pieces. We could not reach the store just now.');
+  }
+}
+
+/* ---------- rendering ---------- */
+const picSrc = p => p.image || FB[p.category] || 'images/placeholder.svg';
+const img = p => `<img loading="lazy" decoding="async" src="${esc(picSrc(p))}" alt="${esc(p.name)}" onerror="imgFail(this)" data-fallback="${esc(FB[p.category] || 'images/placeholder.svg')}">`;
+
+function renderFilters() {
+  const cats = [...new Set(products.map(p => p.category))];
+  $('filters').innerHTML = ['All', ...cats].map(c => `<button class="filter" data-filter="${esc(c)}">${c === 'All' ? 'All pieces' : esc(c)}</button>`).join('') +
+    `<button class="filter" data-filter="__fav">♥ Favourites <span id="favCount"></span></button>`;
+  updateFavCount();
+}
+function updateFavCount() { const el = $('favCount'); if (el) el.textContent = favorites.size ? `(${favorites.size})` : '' }
+
+function renderProducts() {
+  const q = searchTerm.trim().toLowerCase();
+  const list = products.filter(p =>
+    (activeFilter === 'All' || (activeFilter === '__fav' ? favorites.has(p.id) : p.category === activeFilter)) &&
+    (!q || `${p.name} ${p.brand} ${p.category}`.toLowerCase().includes(q)));
+  const empty = !products.length ? 'Our edit is being curated. Please check back soon.'
+    : activeFilter === '__fav' && !q ? 'No favourites yet. Tap ♡ on a piece you love.' : 'No pieces found. Try another search or category.';
+  grid.innerHTML = list.length ? list.map(p => {
+    const fav = favorites.has(p.id), out = p.stock < 1, tag = out ? 'Sold out' : p.tag;
+    return `<article class="product-card"><div class="product-image">${img(p)}${tag ? `<span class="product-tag">${esc(tag)}</span>` : ''}<button class="heart ${fav ? 'saved' : ''}" data-heart="${esc(p.id)}" aria-label="${fav ? 'Remove from' : 'Add to'} favourites">${fav ? '♥' : '♡'}</button><button class="quick-add" data-add="${esc(p.id)}" ${out ? 'disabled' : ''}>${out ? 'Sold out' : 'Add to bag · ' + money(p.price)}</button></div><div class="product-meta"><div class="brand-name">${esc(p.brand)}</div><div class="product-name">${esc(p.name)}</div><div class="product-bottom"><span class="price">${money(p.price)}</span><span class="product-category">${esc(p.category)}</span></div></div></article>`;
+  }).join('') : `<div class="no-results">${empty}</div>`;
+  document.querySelectorAll('.filter').forEach(b => b.classList.toggle('active', b.dataset.filter === activeFilter));
+  updateFavCount();
+}
+
+function showToast(msg) {
+  const t = $('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(showToast.timer); showToast.timer = setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* ---------- filters / search ---------- */
+function clearSearch(render = true) {
+  clearTimeout(searchTimer); searchTerm = ''; $('searchInput').value = '';
+  if (render) renderProducts();
+}
+function setFilter(f) { activeFilter = f; clearSearch(false); renderProducts() }
+function toggleFav(id, btn) {
+  const on = !favorites.has(id);
+  on ? favorites.add(id) : favorites.delete(id);
+  store.set('ev.fav', [...favorites]);
+  if (activeFilter === '__fav' && !on) return renderProducts();
+  btn.classList.toggle('saved', on); btn.textContent = on ? '♥' : '♡';
+  btn.setAttribute('aria-label', (on ? 'Remove from' : 'Add to') + ' favourites');
+  updateFavCount();
+}
+
+/* ---------- cart ---------- */
+const cartEntries = () => Object.entries(cart).map(([id, q]) => [byId.get(id), q]).filter(([p, q]) => p && q > 0);
+const cartSubtotal = () => cartEntries().reduce((s, [p, q]) => s + p.price * q, 0);
+
+function addToCart(id) {
+  const p = byId.get(id); if (!p) return;
+  const cur = cart[id] || 0;
+  if (cur >= p.stock) return showToast(p.stock < 1 ? 'Sorry, this piece is sold out.' : `Only ${p.stock} available.`);
+  cart[id] = cur + 1; saveCart(); renderCart(); showToast('Added to your bag: ' + p.name);
+}
+function changeQty(id, delta) {
+  const p = byId.get(id); if (!p) return;
+  const next = Math.min((cart[id] || 0) + delta, p.stock);
+  if (next <= 0) delete cart[id]; else cart[id] = next;
+  saveCart(); renderCart();
+}
+function renderCart() {
+  const entries = cartEntries(), count = entries.reduce((s, [, q]) => s + q, 0);
+  $('cartCount').textContent = count; $('drawerCount').textContent = `(${count})`;
+  $('subtotal').textContent = money(cartSubtotal());
+  $('cartItems').innerHTML = entries.length ? entries.map(([p, q]) => `<div class="cart-row"><img src="${esc(picSrc(p))}" alt="${esc(p.name)}" onerror="imgFail(this)" data-fallback="${esc(FB[p.category] || 'images/placeholder.svg')}"><div><h4>${esc(p.name)}</h4><p>${money(p.price)}</p><div class="qty"><button data-qty="${esc(p.id)}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${q}</span><button data-qty="${esc(p.id)}" data-delta="1" aria-label="Increase quantity">+</button></div></div><div><strong style="font-size:11px">${money(p.price * q)}</strong><br><button class="remove" data-remove="${esc(p.id)}">Remove</button></div></div>`).join('')
+    : '<div class="empty-cart"><h4>Your bag is waiting.</h4><p>Find something that feels like you.</p><button class="btn outline" id="emptyShop">Explore the edit</button></div>';
+  $('cartFoot').style.display = entries.length ? 'block' : 'none';
+}
+function openCart() { lastFocus = document.activeElement; drawer.classList.add('open'); $('backdrop').classList.add('open'); document.body.style.overflow = 'hidden'; $('cartClose').focus() }
+function closeCart() {
+  if (!drawer.classList.contains('open')) return;
+  drawer.classList.remove('open'); $('backdrop').classList.remove('open');
+  if (!wrap.classList.contains('open')) document.body.style.overflow = '';
+  lastFocus?.focus?.();
+}
+
+/* ---------- checkout (M-Pesa STK Push) ---------- */
+const okPhone = p => /^(?:\+?254|0)?[17]\d{8}$/.test(p.replace(/[\s-]/g, ''));
+const deliveryFor = county => county.trim().toLowerCase() === 'nairobi' ? DELIVERY.nairobi : DELIVERY.other;
+const checkoutOpen = () => wrap.classList.contains('open');
+
+function openCheckout() {
+  lastFocus = document.activeElement; wrap.classList.add('open'); document.body.style.overflow = 'hidden';
+  showCheckoutForm();
+}
+function closeCheckout() {
+  if (!checkoutOpen()) return;
+  wrap.classList.remove('open'); document.body.style.overflow = ''; lastFocus?.focus?.();
+}
+
+function showCheckoutForm() {
+  const sub = cartSubtotal();
+  coBody.innerHTML = `<h3 id="coTitle">Checkout</h3><p class="co-sub">Pay with M-Pesa. You'll get a prompt on your phone.</p>
+  <form id="coForm" novalidate>
+    <label>Full name<input name="name" autocomplete="name" required></label>
+    <label>M-Pesa phone number<input name="phone" inputmode="tel" autocomplete="tel" placeholder="0712 345 678" required></label>
+    <label>Email (optional)<input name="email" type="email" autocomplete="email"></label>
+    <div class="row2"><label>County<input name="county" list="counties" autocomplete="off" required></label><label>Delivery address<input name="address" autocomplete="street-address" required></label></div>
+    <div class="co-totals"><div><span>Subtotal</span><span>${money(sub)}</span></div><div><span>Delivery</span><span id="coFee">Based on county</span></div><div class="total"><span>Total</span><span id="coTotal">${money(sub)}+</span></div></div>
+    <p class="co-err" id="coErr" role="alert"></p>
+    <button class="btn" type="submit" id="coPay">Pay with M-Pesa</button>
+  </form>`;
+  coBody.querySelector('input[name=name]').focus();
+}
+
+async function submitOrder(form) {
+  const d = Object.fromEntries(new FormData(form)), err = $('coErr'), btn = $('coPay');
+  const fail = m => { err.textContent = m };
+  if (!d.name.trim()) return fail('Please enter your name.');
+  if (!okPhone(d.phone)) return fail('Enter a valid Safaricom number, e.g. 0712 345 678.');
+  if (!d.county.trim() || !d.address.trim()) return fail('Please add your county and delivery address.');
+  const items = cartEntries().map(([p, quantity]) => ({ product_id: p.id, quantity }));
+  if (!items.length) return fail('Your bag is empty.');
+  err.textContent = ''; btn.disabled = true; btn.textContent = 'Sending M-Pesa prompt…';
+  try {
+    const r = await fetch(`${API}/functions/v1/create-order`, {
+      method: 'POST', headers: H,
+      body: JSON.stringify({ items, customer: { name: d.name.trim(), phone: d.phone, email: d.email.trim(), county: d.county.trim(), address: d.address.trim() } })
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || 'Could not start payment. Please try again.');
+    waitForPayment(j.order_id, j.total_kes, d.name.trim());
+  } catch (e) {
+    fail(e.message); btn.disabled = false; btn.textContent = 'Pay with M-Pesa';
+  }
+}
+
+async function waitForPayment(orderId, total, name) {
+  coBody.innerHTML = `<div class="co-state"><div class="spinner"></div><h3 id="coTitle">Check your phone</h3><p>Enter your M-Pesa PIN to pay ${money(total)}.<br>Keep this window open until we confirm.</p></div>`;
+  polling = true;
+  const ref = orderId.slice(0, 8).toUpperCase(), t0 = Date.now();
+  let result = null;
+  while (Date.now() - t0 < 120000) {
+    await sleep(3000);
+    try {
+      const r = await fetch(`${API}/rest/v1/rpc/order_status`, { method: 'POST', headers: H, body: JSON.stringify({ p_id: orderId }) });
+      const o = (await r.json())?.[0];
+      if (o && (o.status === 'paid' || o.status === 'failed' || o.status === 'cancelled')) { result = o; break }
+    } catch { /* network blip, keep polling */ }
+  }
+  polling = false;
+  if (result?.status === 'paid') {
+    cart = {}; saveCart(); renderCart(); loadProducts();
+    if (checkoutOpen()) coBody.innerHTML = `<div class="co-state"><h3 id="coTitle">Thank you, ${esc(name.split(' ')[0])}.</h3><p>We received your payment of ${money(result.total_kes)}.</p><p><strong>M-Pesa receipt:</strong> ${esc(result.mpesa_receipt)}<br><strong>Order ref:</strong> ${esc(ref)}</p><p style="color:var(--muted)">Keep these for your records. We'll arrange delivery to your address.</p><button class="btn" id="coDone">Continue shopping</button></div>`;
+    else showToast('Payment received. Thank you! M-Pesa receipt ' + result.mpesa_receipt);
+  } else if (result) {
+    if (checkoutOpen()) coBody.innerHTML = `<div class="co-state"><h3 id="coTitle">Payment not completed</h3><p>${esc(result.payment_result_desc || 'The M-Pesa payment did not go through.')}</p><p style="color:var(--muted)">You haven't been charged for this attempt. Your bag is saved.</p><button class="btn" id="coRetry">Try again</button></div>`;
+    else showToast('Payment was not completed. Your bag is saved.');
+  } else if (checkoutOpen()) {
+    coBody.innerHTML = `<div class="co-state"><h3 id="coTitle">Still waiting</h3><p>We haven't received confirmation yet. If M-Pesa deducted money, please don't pay again. Contact us with order ref <strong>${esc(ref)}</strong>.</p><button class="btn outline" id="coDone">Close</button></div>`;
+  }
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  const t = e.target;
+  const add = t.closest('[data-add]'); if (add) addToCart(add.dataset.add);
+  const heart = t.closest('[data-heart]'); if (heart) toggleFav(heart.dataset.heart, heart);
+  const filter = t.closest('[data-filter]'); if (filter) setFilter(filter.dataset.filter);
+  const cat = t.closest('[data-shop-category]'); if (cat) setFilter(cat.dataset.shopCategory);
+  const navcat = t.closest('[data-category]'); if (navcat) { setFilter(navcat.dataset.category); $('nav').classList.remove('open') }
+  const qty = t.closest('[data-qty]'); if (qty) changeQty(qty.dataset.qty, +qty.dataset.delta);
+  const rem = t.closest('[data-remove]'); if (rem) { delete cart[rem.dataset.remove]; saveCart(); renderCart() }
+  const info = t.closest('[data-info]'); if (info) { e.preventDefault(); showToast(info.dataset.info) }
+  if (t.id === 'emptyShop') { closeCart(); $('shop').scrollIntoView({ behavior: 'smooth' }) }
+  if (t.id === 'coDone' || t.id === 'coClose') closeCheckout();
+  if (t.id === 'coRetry') showCheckoutForm();
+  if (t === wrap) closeCheckout();
+});
+document.addEventListener('submit', e => { if (e.target.id === 'coForm') { e.preventDefault(); submitOrder(e.target) } });
+document.addEventListener('input', e => {
+  if (e.target.name === 'county' && $('coFee')) {
+    const c = e.target.value, sub = cartSubtotal();
+    if (c.trim()) { $('coFee').textContent = money(deliveryFor(c)); $('coTotal').textContent = money(sub + deliveryFor(c)) }
+    else { $('coFee').textContent = 'Based on county'; $('coTotal').textContent = money(sub) + '+' }
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeCheckout(); closeCart(); $('searchWrap').classList.remove('open'); clearSearch() }
+  if (e.key === 'Tab') { // keep focus inside an open dialog
+    const box = checkoutOpen() ? $('checkoutModal') : drawer.classList.contains('open') ? drawer : null; if (!box) return;
+    const f = [...box.querySelectorAll('button:not([disabled]),input,a[href]')].filter(el => el.getClientRects().length);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+  }
+});
+
+$('cartOpen').addEventListener('click', openCart);
+$('cartClose').addEventListener('click', closeCart);
+$('backdrop').addEventListener('click', closeCart);
+$('menuToggle').addEventListener('click', () => $('nav').classList.toggle('open'));
+$('viewAll').addEventListener('click', () => setFilter('All'));
+
+$('searchToggle').addEventListener('click', () => {
+  const w = $('searchWrap'); w.classList.toggle('open');
+  if (w.classList.contains('open')) $('searchInput').focus(); else clearSearch();
+});
+$('searchInput').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    searchTerm = e.target.value; activeFilter = 'All'; renderProducts();
+    const r = $('shop').getBoundingClientRect();
+    if (searchTerm && (r.top > innerHeight * .5 || r.bottom < 0)) $('shop').scrollIntoView({ behavior: 'smooth' });
+  }, 200);
+});
+
+$('checkoutBtn').addEventListener('click', () => {
+  if (catalogue !== 'live') return showToast('Checkout is not connected yet. Add your Supabase details in config.js.');
+  if (!cartEntries().length) return;
+  if (polling) return showToast('A payment is still being confirmed. Please wait.');
+  closeCart(); openCheckout();
+});
+$('accountBtn').addEventListener('click', () => showToast('Customer accounts are coming soon. You can check out as a guest.'));
+
+$('newsletterForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const form = e.target, email = $('newsletterEmail').value.trim();
+  if (!LIVE) { showToast('Newsletter sign-up is connected once config.js is set up.'); return form.reset() }
+  try {
+    const r = await fetch(`${API}/rest/v1/newsletter_subscribers`, { method: 'POST', headers: { ...H, Prefer: 'return=minimal' }, body: JSON.stringify({ email }) });
+    if (r.ok) { showToast('Thank you. You\'re on the list.'); form.reset() }
+    else if (r.status === 409) { showToast('You\'re already on the list.'); form.reset() }
+    else throw new Error('HTTP ' + r.status);
+  } catch (err) { console.error(err); showToast('Sorry, we could not sign you up. Please try again.') }
+});
+
+$('year').textContent = new Date().getFullYear();
+grid.innerHTML = '<div class="no-results">Loading the edit…</div>';
+renderCart();
+loadProducts();
+</script></body></html>
